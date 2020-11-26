@@ -171,15 +171,11 @@ while attempts > 0:
         attempts -= 1
 
 print("Sudoku Grid Ready")
-count = 0
+# I added this to export the file
+file = "output_file.sudoku"
+f = open(file, "w")
 for row in grid:
-    row.insert(6, "|")
-    row.insert(3, "|")
-    if count == 3 or count == 6:
-        print("---------------------")
     for item in row:
-        if item == 0:
-            item = " "
-        print(item, end=" ")
-    print("\n", end="")
-    count += 1
+        f.write(str(item))
+    f.write("\n")
+f.close()
