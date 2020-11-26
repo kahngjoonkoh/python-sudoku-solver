@@ -1,5 +1,4 @@
 # Sudoku Generator Algorithm - www.101computing.net/sudoku-generator-algorithm/
-import turtle
 from random import randint, shuffle
 from time import sleep
 
@@ -15,6 +14,7 @@ grid.append([0, 0, 0, 0, 0, 0, 0, 0, 0])
 grid.append([0, 0, 0, 0, 0, 0, 0, 0, 0])
 grid.append([0, 0, 0, 0, 0, 0, 0, 0, 0])
 
+
 # A function to check if the grid is full
 def checkGrid(grid):
     for row in range(0, 9):
@@ -24,6 +24,7 @@ def checkGrid(grid):
 
     # We have a complete grid!
     return True
+
 
 # A backtracking/recursive function to check all possible combinations of numbers until a solution is found
 def solveGrid(grid):
