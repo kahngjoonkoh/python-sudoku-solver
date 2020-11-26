@@ -127,8 +127,8 @@ def check_num_ability():
 
 
 def solve_sudoku(input_grid):
-    grid = assured_fill(input_grid)
-    print_sudoku_grid(grid, show_zero=False)
+    new_grid = assured_fill(input_grid)
+    print_sudoku_grid(new_grid, show_zero=False)
 
 
 grid = read_sudoku_file("output_file.sudoku")
